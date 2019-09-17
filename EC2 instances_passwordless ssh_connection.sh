@@ -1,6 +1,7 @@
 #!/bin/bash
 #Author: Sandip Saha
-#This script will establish password-less SSH between EC2 instances.   
+#This script will establish password-less SSH between EC2 instances.
+#Please transfer .pem file to your HOME Directory same as this Script. It has been considered you have used same .pem file for all your instances 
 #Please create Instance_IP_Details.txt in your HOME Directory, and list the IP-Details of your instances here. Note: 1st Instance IP-Address will be considered as host node.
 #We will use ubuntu user for this purpose.
 pem_file_path="`pwd`/`ls|grep -i *.pem`"
