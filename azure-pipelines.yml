@@ -1,12 +1,4 @@
 # Starter pipeline
-- task: aquasecScanner@4
-  inputs:
-    scanType: 'local'
-    register: false
-    hideBase: false
-    showNegligible: false
-    windowsScannerVersion: '4.2.0'
-    connection: 'az-demo-scanner'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
