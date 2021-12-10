@@ -17,7 +17,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  
+
 - task: aquasecScanner@4
   inputs:
     image: 'alpine:latest'
@@ -26,7 +26,8 @@ steps:
     hideBase: false
     showNegligible: false
     windowsScannerVersion: '4.2.0'
+    scanner: 'registry.aquasec.com/scanner:6.2'
+    runOptions: '-v /var/run/containerd.sock:/var/run/containerd.sock -v /tmp:/tmp -e BUILD_JOB_NAME=alpine -e SCALOCK_LOG_LEVEL=DEBUG'
     connection: 'aqua-scanner'
     customFlags: '--direct-cc'
     caCertificates: true
-    registerCompliant: true
