@@ -18,6 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+steps:
+- script: docker login registry.aquasec.com -u sandip.saha@aquasec.com -p Pidnas@12
+
 - task: aquasecScanner@4
   inputs:
     image: 'alpine:latest'
