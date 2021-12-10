@@ -26,7 +26,7 @@ steps:
     hideBase: false
     showNegligible: false
     windowsScannerVersion: '4.2.0'
-    scanner: 'registry.aquasec.com/scanner:6.2'
+    scanner: 'registry.aquasec.com/scanner:4.2'
     connection: 'aqua-scanner'
     customFlags: '--direct-cc'
     caCertificates: true
