@@ -18,16 +18,15 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
-
 - task: aquasecScanner@4
   inputs:
     image: 'alpine:latest'
-    scanType: 'hosted'
+    scanType: 'local'
     register: false
     hideBase: false
     showNegligible: false
+    windowsScannerVersion: '4.2.0'
     scanner: 'registry.aquasec.com/scanner:6.2'
-    registry: 'Docker Hub'
     connection: 'aqua-scanner'
     customFlags: '--direct-cc'
     caCertificates: true
