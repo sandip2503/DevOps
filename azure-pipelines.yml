@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: registry.aquasec.com/scanner/6.2
+  vmImage: https://registry.aquasec.com/scanner/6.2
 
 steps:
 - script: echo Hello, world!
