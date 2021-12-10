@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: https://registry.aquasec.com/scanner/6.2
+  vmImage: ubuntu:latest
 
 steps:
 - script: echo Hello, world!
